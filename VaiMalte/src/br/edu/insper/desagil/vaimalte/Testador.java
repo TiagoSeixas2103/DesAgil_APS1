@@ -21,7 +21,10 @@ public class Testador {
 		
 		Caixa caixa_b = new Caixa();
 		
-		if (caixa_b.totalCarrinho(carrinho_b) == 20) {
+		double valorB = caixa_b.totalCarrinho(carrinho_b);
+		
+		
+		if (valorB == 20.0) {
 			return true;
 		}
 		
@@ -37,8 +40,10 @@ public class Testador {
 		Caixa caixa_c = new Caixa();
 		caixa_c.inserir(produto_c, 10);
 		
+		double valorC = caixa_c.totalCarrinho(carrinho_c);
 		
-		if (caixa_c.totalCarrinho(carrinho_c) == 108){
+		
+		if (valorC == 108.00){
 			return true;
 		}
 	    return false;
@@ -56,8 +61,9 @@ public class Testador {
 		Caixa caixa_d = new Caixa();
 		caixa_d.inserir(produto_d, 10);
 		
+		double valorD = caixa_d.totalCarrinho(carrinho_d);
 		
-		if (caixa_d.totalCarrinho(carrinho_d) == 2450.0){
+		if (valorD == 2450.00){
 			return true;
 		}
 		
@@ -76,7 +82,9 @@ public class Testador {
 		Caixa caixa_e = new Caixa();
 		caixa_e.inserir(produto_e2, 50);
 		
-		if (caixa_e.totalCarrinho(carrinho_e) == 440.0){
+		double valorE = caixa_e.totalCarrinho(carrinho_e);
+		
+		if (valorE == 440.00){
 			return true;
 		}
 		

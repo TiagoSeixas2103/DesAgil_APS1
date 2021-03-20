@@ -15,6 +15,11 @@ public class Caixa {
 		if (inteiro <= 99 && inteiro >= 1){
 			this.dicionario.put(produto.getCodigo(),inteiro);
 		}
+		
+		else {
+			int desconto = 0;
+			this.dicionario.put(produto.getCodigo(),desconto);
+		}
 	}
 	
 	public double totalCarrinho(Carrinho carrinho) {
@@ -27,7 +32,7 @@ public class Caixa {
 				
 				double desconto_total;
 				
-				desconto_total = dicionario.get(pedido.getProduto().getCodigo());
+				desconto_total = this.dicionario.get(pedido.getProduto().getCodigo());
 				 
 				tot += pedido.totalPedido() * (1-(desconto_total*0.01));
 			}
@@ -37,6 +42,7 @@ public class Caixa {
 			}
 			
 		}
+		
 		return  tot;
 		
 				
