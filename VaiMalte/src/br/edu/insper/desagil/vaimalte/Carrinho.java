@@ -11,20 +11,22 @@ public class Carrinho {
 	}
 	
 	public void adiciona(Produto produto_novo) {
+		
 		for (Pedido pedido: pedidos) {
+			
 			if (pedido.getProduto() == produto_novo) {
-				pedido.incremento();
-			} else {
-				Pedido pedido_adicional = new Pedido(produto_novo);
-				pedidos.add(pedido_adicional);
-			}
+				pedido.incremento();}
+			
+		Pedido pedido_adicional = new Pedido(produto_novo);
+		pedidos.add(pedido_adicional);
+		
 		}
 			
 			
 	}
 
 	public List<Pedido> getPedidos() {
-		return pedidos;
+		return this.pedidos;
 	}
 	
 	

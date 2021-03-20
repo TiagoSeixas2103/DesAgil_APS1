@@ -12,15 +12,15 @@ public class Produto {
 	}
 
 	public int getCodigo() {
-		return codigo;
+		return this.codigo;
 	}
 
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public double getPreco() {
-		return preco;
+		return this.preco;
 	}
 	
 	

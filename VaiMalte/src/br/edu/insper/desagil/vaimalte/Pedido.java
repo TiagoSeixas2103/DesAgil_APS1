@@ -10,20 +10,20 @@ public class Pedido {
 	}
 	
 	public void incremento() {
-		quantidade++;
+		this.quantidade++;
 	}
 	
-	public double total() {
-		double total = quantidade*produto.getPreco();
-		return total;
+	public double totalPedido() {
+		double total_pedido = this.quantidade * this.produto.getPreco();
+		return total_pedido;
 	}
 
 	public Produto getProduto() {
-		return produto;
+		return this.produto;
 	}
 
 	public int getQuantidade() {
-		return quantidade;
+		return this.quantidade;
 	}
 
 	
