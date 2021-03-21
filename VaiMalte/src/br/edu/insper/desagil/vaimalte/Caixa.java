@@ -30,11 +30,11 @@ public class Caixa {
 			
 			if (this.dicionario.containsKey(pedido.getProduto().getCodigo())) {
 				
-				double desconto_total;
+				double descontoTotal;
 				
-				desconto_total = this.dicionario.get(pedido.getProduto().getCodigo());
+				descontoTotal = this.dicionario.get(pedido.getProduto().getCodigo());
 				 
-				tot += pedido.totalPedido() * (1-(desconto_total*0.01));
+				tot += pedido.totalPedido() * (1-(descontoTotal*0.01));
 			}
 			
 			else {

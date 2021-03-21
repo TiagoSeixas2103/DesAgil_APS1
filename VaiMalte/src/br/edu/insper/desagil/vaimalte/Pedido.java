@@ -14,8 +14,8 @@ public class Pedido {
 	}
 	
 	public double totalPedido() {
-		double total_pedido = this.quantidade * this.produto.getPreco();
-		return total_pedido;
+		double totalPedido = this.quantidade * this.produto.getPreco();
+		return totalPedido;
 	}
 
 	public Produto getProduto() {

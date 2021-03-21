@@ -17,15 +17,15 @@ public class Carrinho {
 	}
 	
 
-	public void adiciona(Produto produto_novo) {
-		Pedido pedido_adicional = new Pedido(produto_novo);
+	public void adiciona(Produto produtoNovo) {
+		Pedido pedidoAdicional = new Pedido(produtoNovo);
 		
-		if (!this.pedidos.contains(pedido_adicional)){
-			this.pedidos.add(pedido_adicional);
+		if (!this.pedidos.contains(pedidoAdicional)){
+			this.pedidos.add(pedidoAdicional);
 		}
 		else {
-			for (Pedido pedido_velho : this.pedidos) {
-				pedido_velho.incremento();
+			for (Pedido pedidoVelho : this.pedidos) {
+				pedidoVelho.incremento();
 			}
 		}
 		
